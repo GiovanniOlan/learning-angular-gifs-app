@@ -7,7 +7,7 @@
     "paths": {
       "@src/*": ["src/*"],
       "@app/*": ["src/app/*"],
-      "@layouts/*": ["src/app/common/layouts/*"]
+      "@layouts/*": ["src/app/layouts/*"]
     },
     "outDir": "./dist/out-tsc",
     "strict": true,
