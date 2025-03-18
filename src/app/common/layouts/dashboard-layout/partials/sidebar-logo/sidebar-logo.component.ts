@@ -1,0 +1,14 @@
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+
+@Component({
+  selector: 'dashboard-layout-sidebar-logo',
+  imports: [],
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: `
+    <div id="logo" class="my-4 px-6">
+      <h1 class="text-lg md:text-2xl font-bold text-white">Dash<span class="text-blue-500">8</span>.</h1>
+      <p class="text-slate-500 text-sm">Manage your actions and activities</p>
+    </div>
+  `,
+})
+export class SidebarLogoComponent { }
