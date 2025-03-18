@@ -1,20 +1,11 @@
 import { Routes } from '@angular/router';
+import { DASHBOARD_LAYOUT_ROUTES } from './common/layouts/dashboard-layout/dashboard-layout.routes';
 
 export const routes: Routes = [
   {
     path: 'dashboard',
     loadComponent: () => import('./common/layouts/dashboard-layout/dashboard-layout.component'),
-    children: [
-      {
-        path: 'trending',
-        loadComponent: () => import('./gifs/pages/trending-page/trending-page.component')
-      },
-      {
-        path: 'search',
-        loadComponent: () => import('./gifs/pages/search-page/search-page.component')
-      },
-      { path: '**', redirectTo: 'trending' }
-    ]
+    children: DASHBOARD_LAYOUT_ROUTES
   },
   {
     path: '**',
