@@ -1,0 +1,10 @@
+services:
+  angular:
+    build:
+      context: .
+      dockerfile: Dockerfile-local
+    ports:
+      - "5011:4200"
+    volumes:
+      - .:/code
+    restart: no
